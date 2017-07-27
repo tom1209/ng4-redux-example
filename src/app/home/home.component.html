@@ -1,3 +1,5 @@
-<p>
-  home works!
-</p>
+<div class="row" *ngFor="let run of currentRuns;">
+  <div class="card" style="width: 20rem; height:2rem; margin-bottom: 1em; background: ghostwhite;">
+    {{run.date}}, {{run.distance}}{{run.unitOfMeasure}} in {{run.time}}
+  </div>
+</div>
