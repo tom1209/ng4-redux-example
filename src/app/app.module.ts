@@ -7,6 +7,8 @@ import { AppRouterModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
+import { RunTrackerService } from './services/runTracker.service';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
@@ -24,7 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     AppRouterModule
   ],
-  providers: [],
+  providers: [RunTrackerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
