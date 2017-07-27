@@ -1,5 +1,9 @@
 # Ng4ReduxExample
 
+## Description
+
+This is a simple example of using the latest version of angular with redux. Currently a work in progress. :)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
