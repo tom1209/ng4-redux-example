@@ -2,7 +2,6 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import { RunTrackerService } from '../services/runTracker.service';
 import { Run } from '../models/run.model';
 
-import { Observable } from 'rxjs/Observable';
 import {Subscription} from 'rxjs/Subscription';
 
 @Component({

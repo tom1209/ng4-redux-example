@@ -4,12 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppRouterModule } from './app-routing.module';
+import { SideBarModule } from './sideBar/sideBar.module';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { RunTrackerService } from './services/runTracker.service';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 
 
@@ -24,7 +28,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpModule,
     NgbModule,
-    AppRouterModule
+    AppRouterModule,
+    SideBarModule
   ],
   providers: [RunTrackerService],
   bootstrap: [AppComponent]
