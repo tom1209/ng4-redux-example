@@ -1,5 +1,21 @@
-<div class="row" *ngFor="let run of currentRuns;">
-  <div class="card" style="width: 20rem; height:2rem; margin-bottom: 1em; background: ghostwhite;">
-    {{run.date}}, {{run.distance}}{{run.unitOfMeasure}} in {{run.time}}
-  </div>
+<div class="row">
+  <table class="table table-inverse table-hover">
+    <thead>
+    <tr>
+      <th>Date</th>
+      <th>Distance</th>
+      <th>Time</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let run of currentRuns;">
+      <td>{{run.date}}</td>
+      <td>{{run.distance}}{{run.unitOfMeasure}}</td>
+      <td>{{run.time}}</td>
+    </tr>
+    </tbody>
+  </table>
 </div>
+
+
