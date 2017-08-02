@@ -5,6 +5,7 @@
       <th>Date</th>
       <th>Distance</th>
       <th>Time</th>
+      <th></th>
     </tr>
     </thead>
 
@@ -13,7 +14,19 @@
       <td>{{run.date}}</td>
       <td>{{run.distance}}{{run.unitOfMeasure}}</td>
       <td>{{run.time}}</td>
+      <td><button class="btn btn-default" (click)="delete(run)">Delete</button></td>
     </tr>
     </tbody>
   </table>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-12">
+    <button type="button"
+            class="btn btn-primary btn-lg"
+            (click)="logRun()">
+      <span class="fa fa-plus-square">  Log a Run</span>
+    </button>
+  </div>
 </div>

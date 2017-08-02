@@ -17,4 +17,12 @@ export class RunTrackerService {
     return this.http.get(`${baseUrl}/runs`)
       .map(run => run.json() as Run[]);
   }
+
+  logRun(run: Run): Observable<any> {
+    return this.http.post(`${baseUrl}/runs`, run);
+  }
+
+  deleteRun(id: string): Observable<any> {
+    return this.http.delete(`${baseUrl}/runs/${id}`);
+  }
 }
