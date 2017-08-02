@@ -1,5 +1,32 @@
-<div class="row" *ngFor="let run of currentRuns;">
-  <div class="card" style="width: 20rem; height:2rem; margin-bottom: 1em; background: ghostwhite;">
-    {{run.date}}, {{run.distance}}{{run.unitOfMeasure}} in {{run.time}}
+<div class="row">
+  <table class="table table-inverse table-hover">
+    <thead>
+    <tr>
+      <th>Date</th>
+      <th>Distance</th>
+      <th>Time</th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let run of currentRuns;">
+      <td>{{run.date}}</td>
+      <td>{{run.distance}}{{run.unitOfMeasure}}</td>
+      <td>{{run.time}}</td>
+      <td><button class="btn btn-default" (click)="delete(run)">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-12">
+    <button type="button"
+            class="btn btn-primary btn-lg"
+            (click)="logRun()">
+      <span class="fa fa-plus-square">  Log a Run</span>
+    </button>
   </div>
 </div>
